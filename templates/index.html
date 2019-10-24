@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ReVoice - AI Review Creator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/blinker.css') }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/magnific-popup.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/jquery-ui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'fonts/flaticon/font/flaticon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/aos.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <style>
+      div.hidden {
+        display: none;
+      }
+      div.hidden-form {
+        display:none;
+      }
+    </style>
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar py-3" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Re<span class="text-primary">Voice</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li class="active"><a href="index.html">Our Idea</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li class="cta"><a href="buy-tickets.html">Train ML Model</a></li>
+                <li class="cta"><a href="buy-tickets.html">Switch to V2(Beta)</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-section site-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <span class="d-block mb-3 caption" data-aos="fade-up" data-aos-delay="100">AI-enabled Smart Reviews Platform</span>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="200">No more typing! </h1>
+            <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="300">Tap the button below to get started!</span>
+            <a class="btn-custom" data-aos="fade-up" data-aos-delay="400"><span>🎙️ Speak Review</span></a>
+            <div class="hidden"><i class=" Blink fa fa-circle text-danger"></i>&nbsp; LISTENING </div>
+            
+            <br>
+            <div>
+              <p class="recogoutput d-block mb-2 caption" data-aos="fade-up" data-aos-delay="100"><em>  </em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+      
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">The Motivation</h2>
+            <p>This AI feature can be added to any of the tech company application like Zomato, Redbus, Amazon, Flipkart etc. </p>
+          </div>
+          <div class="col-md-3 ml-auto">
+            <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+            <p>
+              <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+              <a href="#" class="p-2"><span class="icon-youtube"></span></a>
+              <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-md-12 text-center">
+              <div class="border-top pt-5">
+              <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+  <script>
+    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
+    var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
+    var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
+
+    var recognition = new SpeechRecognition();
+    var speechRecognitionList = new SpeechGrammarList();
+
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    diagnostic = document.querySelector('.recogoutput');
+    button = document.querySelector('.btn-custom')
+    bl = document.querySelector('div.hidden')
+    input = document.querySelector('input.inp')
+
+    button.onclick = function() {
+        diagnostic.textContent = '...'
+        recognition.start();
+        console.log('Ready to receive Speech...');
+        if (bl.style.display === "block") {
+          bl.style.display = "none";
+        } else {
+          bl.style.display = "block";
+        }
+    }
+
+    recognition.onresult = function(event) {
+        var last = event.results.length - 1;
+        var color = event.results[last][0].transcript;
+        console.log(event.results)
+        processedSpeech = color;
+        diagnostic.textContent = "Processed Speech: " + processedSpeech + ".";
+        console.log('Confidence: ' + event.results[0][0].confidence);
+        const form = document.createElement('form');
+        form.method = "POST"
+        form.action = "/predict"
+        const hiddenField = document.createElement('input');
+        hiddenField.type = 'hidden';
+        hiddenField.name = 'RecognisedSpeech';
+        hiddenField.value = processedSpeech;
+        form.appendChild(hiddenField);
+        document.body.appendChild(form);
+        console.log(form)
+        form.submit();
+    }
+
+    recognition.onspeechend = function() {
+        recognition.stop();
+    }
+
+    recognition.onnomatch = function(event) {
+        diagnostic.textContent = "I didn't recognise that what you said. Please speak again.";
+    }
+
+    recognition.onerror = function(event) {
+      if (bl.style.display === "none") {
+          bl.style.display = "block";
+        } else {
+          bl.style.display = "none";
+        }
+        diagnostic.textContent = 'Error occurred in recognition: ' + event.error;
+    }
+  </script>
+  <script src="{{ url_for('static', filename = 'js/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery-ui.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.countdown.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/bootstrap-datepicker.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+    
+  </body>
+</html>
