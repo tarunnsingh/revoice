@@ -6,29 +6,31 @@ import os
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def homepage():
     return render_template("index.html")
+
 
 @app.route("/train")
 def train():
     td = TrainDriver()
     done = td.driver()
-    return(done)
+    return done
 
-@app.route("/predict", methods = ['GET', 'POST'])
+
+@app.route("/predict", methods=["GET", "POST"])
 def predict():
-    #Making Predictions
-    if request.method == 'POST':
-        recogspeech = request.form['RecognisedSpeech']  
+    # Making Predictions
+    if request.method == "POST":
+        recogspeech = request.form["RecognisedSpeech"]
         eb = EnsembleBuilder()
         result = eb.make_prediction(recogspeech)
-        print(result, recogspeech)
-        return render_template('predict.html', result=result, speech=recogspeech)
-
-if __name__ == '__main__':
-    app.run(debug = True)
+        print("User Review: {}".format(recogspeech))
+        print(result)
+        return render_template("predict.html", result=result, speech=recogspeech)
 
 
-
+if __name__ == "__main__":
+    app.run(debug=True)
 
