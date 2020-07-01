@@ -2,7 +2,10 @@ from predictor import EnsembleBuilder
 from train_driver import TrainDriver
 from flask import Flask, render_template, url_for, request
 import os
+import nltk
 
+nltk.download("punkt")
+nltk.download("stopwords")
 
 app = Flask(__name__)
 
